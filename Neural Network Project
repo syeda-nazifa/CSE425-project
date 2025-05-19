@@ -9,6 +9,7 @@ Original file is located at
 
 !pip install pyarrow
 import pandas as pd
+!pip install graphviz
 
 
 
