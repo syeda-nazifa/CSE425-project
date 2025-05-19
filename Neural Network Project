@@ -10,22 +10,7 @@ Original file is located at
 !pip install pyarrow
 import pandas as pd
 
-file_path = "train-00000-of-00001.parquet"
 
-try:
-    train_df = pd.read_parquet(file_path)
-    print("Loaded as Parquet")
-    print(train_df.head())  # Preview
-except Exception as e:
-    print("Parquet load failed:", e)
-
-
-    try:
-        train_df = pd.read_csv(file_path)
-        print("Loaded as CSV")
-        print(train_df.head())
-    except Exception as e_csv:
-        print("CSV load also failed:", e_csv)
 
 !pip install -q torch torchvision scikit-learn matplotlib seaborn umap-learn
 
